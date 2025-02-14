@@ -20,6 +20,7 @@ public class Admin extends JFrame{
     private JButton loginButton;
     private JButton cencelButton;
     private JButton backButton;
+    private JPanel lblMsg;
 
     public Admin (){
         setContentPane(panel1);
@@ -30,9 +31,14 @@ public class Admin extends JFrame{
 
         cencelButton.addActionListener(new ActionListener() {
             @Override
+//            public void actionPerformed(ActionEvent e) {
+//                System.exit(0);
+//           }
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-           }
+                LoginForms loginForms = new LoginForms(null);
+                loginForms.setVisible(true);
+                dispose();
+            }
         });
        loginButton.addActionListener(new ActionListener() {
            @Override
@@ -60,6 +66,7 @@ public class Admin extends JFrame{
                    }
                    else {
                        AuthenticationState.setAuthenticated(false);
+                       JOptionPane.showMessageDialog(null, "Invalid username or password ", "Database Error", JOptionPane.ERROR_MESSAGE);
 //                       lblMsg.setText("Login Failed");
 //                       lblMsg.setForeground(Color.red);
                    }

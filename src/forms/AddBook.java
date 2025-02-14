@@ -281,7 +281,7 @@ public class AddBook extends JFrame {
         setTitle("Add Book");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setMinimumSize(new Dimension(950, 600));
-        setLocationRelativeTo(null);
+//        setLocationRelativeTo(null);
         setContentPane(MainPanel);
 
         resetButton.addActionListener(new ActionListener() {

@@ -2,7 +2,7 @@ import src.cls.AuthenticationState;
 import src.db.DBConnection;
 import src.forms.*;
 import src.forms.ReturnBook;
-
+import src.forms.IssueBook;
 import javax.swing.*;
 import java.sql.Connection;
 
@@ -21,6 +21,9 @@ public class Main {
             if (AuthenticationState.isAuthenticated()) {
                 admin.setVisible(true);
             }
+
+//            AddBook addBook = new AddBook();
+//            addBook.setVisible(true);
 
 //        IssueBook issueBook = new IssueBook();
 //        issueBook.setVisible(true);

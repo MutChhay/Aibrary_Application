@@ -24,6 +24,7 @@ public class LibrainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 AddBook addBook = new AddBook();
                 addBook.setVisible(true);
+                dispose();
             }
         });
         returnBookButton.addActionListener(new ActionListener() {
@@ -31,6 +32,7 @@ public class LibrainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 ReturnBook returnBook = new ReturnBook();
                 returnBook.setVisible(true);
+                dispose();
             }
         });
 
@@ -39,6 +41,7 @@ public class LibrainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 AddStudent addStudent = new AddStudent();
                 addStudent.setVisible(true);
+                dispose();
              }
         });
         Exit.addActionListener(new ActionListener() {
@@ -53,6 +56,7 @@ public class LibrainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 IssueBook issueBook = new IssueBook();
                 issueBook.setVisible(true);
+                dispose();
             }
         });
         reportsButton.addActionListener(new ActionListener() {
@@ -60,6 +64,7 @@ public class LibrainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 LibrainViewReort librainViewReort = new LibrainViewReort();
                 librainViewReort.setVisible(true);
+                dispose();
             }
         });
     }

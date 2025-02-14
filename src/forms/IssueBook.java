@@ -39,6 +39,13 @@ public class IssueBook extends JFrame {
             new KeyValue(0,""),
             new KeyValue(1,"IT"),
             new KeyValue(2, "ITE"),
+            new KeyValue(3, "History"),
+            new KeyValue(4, "English"),
+            new KeyValue(5, "Khmer"),
+            new KeyValue(6, "Biology"),
+            new KeyValue(7, "Math"),
+            new KeyValue(8, "BIOE"),
+            new KeyValue(9, ""),
 
     };
     private void initializedComboBox(){
